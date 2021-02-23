@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Host capacity dashboard</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+  <h1>Dashboard - Host Capacity</h1>
+  <h2 class="selected">Relatório de tensão</h2>
+  <h2 onclick="alert('Em breve!')">Relatório de ampacidade</h2>
+
+  <div class="dashboard-container">
+    <div class="image-container">
+      <object data="./assets/tensao.svg" type="image/svg+xml" id="tensao-map"></object>
+    </div>
+    <div class="info-container">
+      <div class="info-item">
+        <p class="label">Substação</p>
+        <p class="info" id="substation">- - -</p>
+      </div>
+
+      <div class="coordinates-container">
+        <div class="info-item">
+          <p class="coordinate">
+            <strong>Longitude:</strong>
+            <span id="longitude">- - -</span>
+          </p>
+        </div>
+
+        <div class="info-item">
+          <p class="coordinate">
+            <strong>Latitude:</strong>
+            <span id="latitude">- - -</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <p class="label">Ativo</p>
+        <p class="info" id="active">- - -</p>
+      </div>
+
+      <div class="info-item">
+        <p class="label">Capacidade de hospedagem</p>
+        <p class="info" id="host-capacity">- - -</p>
+      </div>
+
+      <div class="info-item">
+        <p class="label">Potência máxima a ser instalada</p>
+        <p class="info" id="maxp-to-install">- - -</p>
+      </div>
+
+      <div class="info-item">
+        <p class="label">Fator de impacto</p>
+        <p class="info" id="impact-factor">- - -</p>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
