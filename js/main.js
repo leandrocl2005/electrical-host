@@ -76,11 +76,15 @@ const data = {
 
 function changeInfo(key) {
   document.getElementById('substation').innerHTML = data[key].substation;
+  document.getElementById('substation').style.color = data[key].defaultColor;
+
   document.getElementById('latitude').innerHTML = data[key].latitude;
   document.getElementById('longitude').innerHTML = data[key].longitude;
   document.getElementById('active').innerHTML = data[key].active;
   document.getElementById('host-capacity').innerHTML = data[key].hostCapacity;
   document.getElementById('maxp-to-install').innerHTML = data[key].maxPtoInstall;
+  document.getElementById('percent-container').style.display = 'block';
+  document.getElementById('percent-fill').style.width = data[key].hostCapacity;
   document.getElementById('impact-factor').innerHTML = data[key].impactFactor;
 }
 

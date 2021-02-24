@@ -16,7 +16,6 @@ strong {
 }
 
 h1, h2 {
-  width: 100%;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -80,6 +79,26 @@ h2:hover {
   padding-bottom: 4px;
 }
 
+.host-capacity-container {
+  display: flex;
+}
+
+#percent-container {
+  display: none;
+  width: 150px;
+  height: 8px;
+  border-radius: 8px;
+  background: darkgray;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+#percent-fill {
+  background: #333;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
 
 .dashboard-container .image-container {
   height: 100%;
@@ -96,9 +115,16 @@ h2:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 4px;
+    padding: 0;
   }
 
-  body h1 {
+  h1, h2 {
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
     text-align: center;
   }
 
@@ -107,10 +133,14 @@ h2:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 
   .dashboard-container .info-container {
     margin-top: 16px;
+    margin-left: 0;
+    max-width: 80vw;
+    padding: 16px;
   }
 
   .dashboard-container .image-container object {

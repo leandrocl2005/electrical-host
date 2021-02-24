@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <title>Host capacity dashboard</title>
+  <title>Hosting capacity</title>
 
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="#">
@@ -17,7 +17,7 @@
 
 <body>
 
-  <h1>Dashboard - Host Capacity</h1>
+  <h1>Hosting Capacity</h1>
   <h2 class="selected">Relatório de tensão</h2>
   <h2 onclick="alert('Em breve!')">Relatório de ampacidade</h2>
 
@@ -27,7 +27,7 @@
     </div>
     <div class="info-container">
       <div class="info-item">
-        <p class="label">Substação</p>
+        <p class="label">Subestação</p>
         <p class="info" id="substation">- - -</p>
       </div>
 
@@ -54,7 +54,12 @@
 
       <div class="info-item">
         <p class="label">Capacidade de hospedagem</p>
-        <p class="info" id="host-capacity">- - -</p>
+        <div class="host-capacity-container">
+          <div id="percent-container">
+            <div id="percent-fill"></div>
+          </div>
+          <p class="info" id="host-capacity">- - -</p>
+        </div>
       </div>
 
       <div class="info-item">
